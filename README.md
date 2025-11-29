@@ -38,3 +38,60 @@ Views: view_actor_summary, view_genre_stats, view_movie_summary
 |  **Abanoub** | `feature/rentings` | **Create a function that fetch rentings table and display the results** | 
 |  **Krishma** | `feature/view-actor-summary` | **Create a function that fetch view_actor_summary view and display the results** | 
 
+
+## Python Scripts for Movies and Rentings
+
+This project includes two simple Python scripts that connect to a Supabase
+PostgreSQL database using the `psycopg2` library. Each script belongs to a
+different feature branch and retrieves data from a specific table.
+
+---
+
+### Feature: Movies (`feature/movies`) 
+Location: feature_movies/server.py
+Purpose:
+- Connects to the database  
+- Fetches all rows from the `movies` table  
+- Prints the results in the terminal  
+
+Main function: `get_all_movies()`
+
+---
+
+### Feature: Rentings (`feature/rentings`)
+Location: feature_rentings/server.py
+Purpose:
+- Connects to the database  
+- Fetches all rows from the `rentings` table  
+- Displays all rows in the terminal  
+
+Main function: `get_all_rentings()`
+
+---
+
+## Environment Variables
+
+Both scripts require a local `.env` file with the database credentials.
+Important:  
+The real `.env` file is **not uploaded** to GitHub for security reasons.
+
+Example structure:
+
+user=YOUR_USER
+password=YOUR_PASSWORD
+host=YOUR_HOST
+port=5432
+dbname=postgres
+sslmode=require
+
+This file shows the required variables without exposing real credentials.
+
+## How to Run the Scripts
+
+Run from the root directory:
+
+Movies:python feature_movies/server.py
+Rentings:python feature_rentings/server.py
+
+Each script loads the environment variables, connects to Supabase, and prints
+the table data in the console.
