@@ -1,42 +1,45 @@
-# Movie-Database.github
-This repository contains our **SQL Week 2 Group Project**, focused on building and managing a **Movie Database** 
+## Movie-Database.github
+
+This repository contains our **SQL Week 2 Group Project**, focused on building and managing a **Movie Database**.
 
 Each team member is responsible for one key section of the project.  
 The goal is to demonstrate solid database design, automation with triggers, reusable SQL logic with functions, and insightful data analytics through queries and reports.
 
 ---
 
-## Team Members & Roles
+## Team Members & Roles (Main Project)
 
-| Member | Git Branch | Part | Role Description |
-|:--------|:-------------|:------|:----------------|
-|  **Mohammad** | `feature/constraints` | **Part 1 – Relationships & Constraints** | 
-|  **Samuel** | `feature/triggers` | **Part 2 – Triggers** | 
-|  **Sayed** | `feature/views` | **Part 3 – Views** | 
-|  **Nadya** | `feature/functions` | **Part 4 – Stored Functions** | 
-|  **Nelson (Project Manager)** | `feature/analytical` | **Part 5 – Analytical Queries** | 
-|  **Abanoub** | `feature/reports` | **Part 6 – Reports (Summary Queries)** | 
+| Member                 | Git Branch          | Part                             | Role Description                    |
+|:-----------------------|:--------------------|:---------------------------------|:------------------------------------|
+| **Mohammad**           | `feature/constraints` | **Part 1 – Relationships & Constraints** |
+| **Samuel**             | `feature/triggers`    | **Part 2 – Triggers**           |
+| **Sayed**              | `feature/views`       | **Part 3 – Views**              |
+| **Nadya**              | `feature/functions`   | **Part 4 – Stored Functions**   |
+| **Nelson (Project Manager)** | `feature/analytical` | **Part 5 – Analytical Queries** |
+| **Abanoub**            | `feature/reports`     | **Part 6 – Reports (Summary Queries)** |
 
+---
 
+### 24 November to 1 December Task
 
-24 November to 1 December Task:
+Create `server.py` and inside this file create 6 functions to display all the table data.
 
-Create Server.py and inside of this file create 6 function to display all the table datas.
+Tables: `actors`, `actsin`, `customers`, `log_activity`, `movies`, `rentings`  
+Views: `view_actor_summary`, `view_genre_stats`, `view_movie_summary`
 
-Tables: actors, actsin, customers, log_activity, movies, rentings
-Views: view_actor_summary, view_genre_stats, view_movie_summary
+---
 
-## Team Members & Roles
+## Team Members & Roles (Python Server Tasks)
 
-| Member | Git Branch | Part | Role Description |
-|:--------|:-------------|:------|:----------------|
-|  **Mohammad** | `feature/actors` | **Create a function that fetch actors table and display the results** | 
-|  **Samuel** | `feature/actsin` | **Create a function that fetch actsin table and display the results** | 
-|  **Sayed** | `feature/customers` | **Create a function that fetch customers table and display the results** | 
-|  **Nadya** | `feature/log_activity` | **Create a function that fetch log_activity table and display the results** | 
-|  **Nelson (Project Manager)** | `feature/movies` | **Create a function that fetch movies table and display the results** | 
-|  **Abanoub** | `feature/rentings` | **Create a function that fetch rentings table and display the results** | 
-|  **Krishma** | `feature/view-actor-summary` | **Create a function that fetch view_actor_summary view and display the results** | 
+| Member                 | Git Branch                  | Task Description                                                             |
+|:-----------------------|:----------------------------|:-----------------------------------------------------------------------------|
+| **Mohammad**           | `feature/actors`            | Create a function that fetches the `actors` table and displays the results. |
+| **Samuel**             | `feature/actsin`            | Create a function that fetches the `actsin` table and displays the results. |
+| **Sayed**              | `feature/customers`         | Create a function that fetches the `customers` table and displays the results. |
+| **Nadya**              | `feature/log_activity`      | Create a function that fetches the `log_activity` table and displays the results. |
+| **Nelson (Project Manager)** | `feature/movies`      | Create a function that fetches the `movies` table and displays the results. |
+| **Abanoub**            | `feature/rentings`          | Create a function that fetches the `rentings` table and displays the results. |
+| **Krishma**            | `feature/view-actor-summary` | Create a function that fetches the `view_actor_summary` view and displays the results. |
 
 
 ## Python Scripts for Movies and Rentings
@@ -47,9 +50,11 @@ different feature branch and retrieves data from a specific table.
 
 ---
 
-### Feature: Movies (`feature/movies`) 
+### Feature: Movies (`feature/movies`)
+
 Location: feature_movies/server.py
 Purpose:
+
 - Connects to the database  
 - Fetches all rows from the `movies` table  
 - Prints the results in the terminal  
@@ -59,8 +64,10 @@ Main function: `get_all_movies()`
 ---
 
 ### Feature: Rentings (`feature/rentings`)
+
 Location: feature_rentings/server.py
 Purpose:
+
 - Connects to the database  
 - Fetches all rows from the `rentings` table  
 - Displays all rows in the terminal  
